@@ -1,4 +1,5 @@
-Fix bugs and adapt to tensorflow 1.12.0
+# Clone from https://github.com/ariseff/overcoming-catastrophic and FIX bugs
+## CHANGE: Fix bugs and adapt to tensorflow 1.12.0
 
 This is an implementation of "Overcoming catastrophic forgetting in neural networks" (https://arxiv.org/abs/1612.00796) for supervised learning in TensorFlow.
 
