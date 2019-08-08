@@ -40,6 +40,7 @@ class Model:
         # performance metrics
         correct_prediction = tf.equal(tf.argmax(self.y,1), tf.argmax(y_,1))
         self.accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
+        self.F_accum = []
 
     def compute_fisher(self, imgset, sess, num_samples=200, plot_diffs=False, disp_freq=10):
         # computer Fisher information for each parameter
